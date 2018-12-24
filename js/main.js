@@ -67,7 +67,7 @@
 
 	// Typing Animation (Typed.js)
 	$('#element').typed({
-	    strings: [">Technical Program Manager<", ">Hardware Design Engineer<", ">Systems Thinker<"],
+	    strings: ["Technical Program Manager", "Hardware Design Engineer", "Systems Thinker"],
 	    typeSpeed: -50,
 	    loop: true,
 	    startDelay: 500,
