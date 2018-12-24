@@ -70,7 +70,7 @@
 	    strings: [">Technical Program Manager<", ">Hardware Design Engineer<", ">Systems Thinker<"],
 	    typeSpeed: -50,
 	    loop: true,
-	    startDelay: 400,
+	    startDelay: 500,
 	    backDelay: 3000,
 	    contentType: 'html',
 	});
