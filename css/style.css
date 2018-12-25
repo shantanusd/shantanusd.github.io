@@ -1079,7 +1079,10 @@ h2.menu-item:after {
 
 .sign {
     margin: 30px 0;
-}
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    }
 
 .info-list {
     border-bottom: 1px solid #ddd;
