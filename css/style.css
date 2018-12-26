@@ -44,6 +44,7 @@ body {
     font-weight: 300;
     line-height: 2.2;
     overflow-x: hidden;
+
 }
 
 a {
@@ -1188,11 +1189,17 @@ h2.menu-item:after {
 }
 
 .timeline.experience:after {
-    content: '\f356';
+    content: url(../images/exp.svg);
+    color: #666;
+    transform:scale(0.5);
+
 }
 
 .timeline.education:after {
-    content: '\f349';
+    content: url(../images/edu.svg);
+    color: #666;
+    transform:scale(0.5);
+   
 }
 
 .exp {
