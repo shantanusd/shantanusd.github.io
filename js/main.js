@@ -74,7 +74,7 @@
 	    backDelay: 3000,
 	    contentType: 'html',
 	});
-
+	
 	//Video background
 	$(".player").mb_YTPlayer({
 	    containment: '#video-wrapper',
