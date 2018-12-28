@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Shantanu Deshpande | Blog</title>
+    <meta name="description" content="Resume.">
+    <meta name="author" content="Shantanusd" />
+    <link rel="icon" href="images/favicon.ico" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700" />
+    <link rel="stylesheet" href="css/plugins.min.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
+    <link href="https://unpkg.com/ionicons@4.5.0/dist/css/ionicons.min.css" rel="stylesheet">
+
+</head>
+
+<div id="blog-header" style="background: url(images/blog/Howto1.jpg); background-size: cover;">
+    <div class="overlay"></div>
+    <div class="single-post-title">
+        <h1>How to Successfully Manage a Hardware Development Schedule and Ship On Time.</h1>
+        <p class="post-info">
+            <span class="post-author">Posted by Shantanu Deshpande</span>
+            <span class="slash"></span>
+            <span class="post-date">Dec 01, 2018</span>
+            <span class="slash"></span>
+            <span class="post-catetory">TPM</span>
+        </p>
+    </div>
+</div>
+<div class="block-content">
+    <div class="row">
+        <div class="col-md-12">
+            <div id="single-post">
+                <div class="post">
+                    <div class="post-body">
+                       
+                                    <p>In the process of securing funding, many companies set an aggressive schedule for developing their product. Often, this schedule is shared with VCs and customers, and high expectations are inadvertently set around when the product might come to market. Unfortunately, due to a variety of reasons, many companies end up in a position where they struggle to ship their product on time, if at all.</p>
+                                    <img src="images/blog/Howto.png" alt="" />
+                                    <p>After working with few hardware and software companies & startups i’ve found that the secret to building the right product and getting it to market is to align on the basic, key features your product must have, and then rigorously testing each feature, one by one.
+
+                                    Below are a few questions to help determine if you are likely to hit your schedule, or if you’re headed down a painful road of delays and setbacks:
+                                    <ol>
+                                    <li><strong>Do you have a clear question to answer for each major design-prototype-build round?</strong></li>
+                                    </ol>
+                                    <p>Development plans should have a structure that looks something like this:</p>
+                                    <ul>
+                                    <li>Architecture</li>
+                                    <li>Benchtop prototype</li>
+                                    <li>Integrated prototype 1 (EVT1)</li>
+                                    <li>Integrated prototype 2 (EVT2)</li>
+                                    <li>Design Verification Testing (DVT)</li>
+                                    <li>Production Validation Testing (PVT)</li>
+                                    </ul>
+                                    <p> While this could be fine for your development, teams often fall into the trap of thinking about what they’re trying to build, instead of what they’re trying to learn.</p>
+                                    <p >For instance, let’s say we were building a product called the FruitMeter that can measure the sweetness of fruit using a novel sugar sensor. A team that’s oriented towards writing software may say something like, “we have a sensor, let’s build custom electronics to hook it up to a microprocessor with Bluetooth and show the sugar levels on a phone.”</p>
+                                    <p>However, what if the key risk is how you handle the sample of fruit in a way that doesn’t contaminate the sensor over time? In that case, you are better off prototyping how to take samples from fruit and effective cleaning between samples.</p>
+                                    <p>If a team is only thinking about building and not learning, the prototypes will not mitigate key risks. In addition, certain risks are more important than others. Explicitly calling out what you’re trying to learn is one step, the next is to make sure the schedule and prototypes are ranking those risks correctly.</p>
+
+                                    <ol start="2">
+                                    <li><strong>Are there objectively verifiable success or failure criteria based on user needs?</strong></li>
+                                    </ol>
+                                    <p>Another mistake is not setting clear criteria for success and failure during the prototyping and testing phase. Without doing this, your team risks building a prototype that yields few (if any) helpful insights.</p>
+                                    <p>For instance, in the case of the FruitMeter, how would you define the success criteria for how resilient the sensor is to getting contaminated? A bad criterion is to tell the engineering team: “the sensor has to be resilient to getting contaminated.” Far too many teams are operating with requirements like this.</p>
+                                    <p>A better approach would be to run some financial models or user tests that show the value of performing 100 readings before servicing the device. Then the team can be told that the “device has to function for at least 100 samples of fruit.”</p>
+                                    <p>An even better approach would be to define real life scenarios with your target customer, and pick the toughest one (i.e. the one that might cause the most contamination). Maybe that’s the situation where people sample figs because of their high sugar content, but samples are an hour apart and the juice dries on the sensor. So the best requirement would be “100 samples of figs with a one hour wait between samples.”</p>
+                                    <p>Now, I am not suggesting you need an exhaustive PRD. A 20-page PRD that lists all the requirements is unnecessary, especially at the very early stages of design when you’re mitigating key risks and are unclear what the key risks even are. Stick to the requirements for that particular prototype but make sure the requirements are rooted in the key customer expectations and the main technical limit conditions.</p>
+                                    <blockquote>
+                                        “People think focus means saying yes to the thing you’ve got to focus on. But that’s not what it means at all. It means saying no to the hundred other good ideas.”
+                                        – Steve Jobs, Apple
+                                    </blockquote>
+                                    <ol start="3">
+                                    <li><strong>Are only one or two major hypotheses being tested in each round of testing?</strong></li>
+                                    </ol>
+                                    <p>One other key sign of a good schedule is that it breaks down learnings into small pieces along the way, rather than relying on One Big Integration at the end.</p>
+                                    <p>In our experience, each prototype build-test round should only validate one or two major hypotheses. This is because learnings from those tests will have ramifications on other parts of the design, and it’s incredibly inefficient to try and parallelize too much development when they have interdependencies. Instead, plan to serialize development and accelerate the speed at which the phases get done.</p>
+                                    <p>In general, I’ve found it to be extremely helpful for the executive and engineering teams to be aligned on the schedule before moving beyond the conceptual phase. Does your team believe in the schedule? Do they feel it is optimistic or conservative?</p>
+                                    <p>Mistakes only compound from this point forward. Getting an early sense of how risky your plans are can help create a more realistic target to strive for, better insight into key challenges, as well as a cushion if unforeseen schedule slips arise.</p>
+                                    </p>
+                                    
+                                </div>
+                    
+                    <ul id="blog-social">
+                        <li>Share this : </li>
+                        <li><a href="#"><i class="ion-social-facebook"></i></a> </li>
+                        <li><a href="#"><i class="ion-social-twitter"></i></a> </li>
+                        <li><a href="#"><i class="ion-social-googleplus"></i></a> </li>
+                        <li><a href="#"><i class="ion-social-pinterest"></i></a> </li>
+                    </ul>
+                    <div class="project-nav text-center">
+                        <span class="float-left">
+                            <a class="open-project" href="project-5.html">&leftarrow; Previous Project</a>
+                        </span>
+                                        <span class="">
+                            <a id="close-project" href="#"><i class="ion-grid"></i></a>
+                        </span>
+                                        <span class="float-right">
+                            <a class="open-project" href="project-1.html">Next Project &rightarrow; </a>
+                        </span>
+                    </div>
+                </div>
+                <div id="comments">
+                    <h5>3 Comments</h5>
+                </div>
+                <div id="respond">
+                    <h3>Leave a comment</h3>
+                    <div class="comment-respond">
+                        <form class="comment-form">
+                            <div class="form-double">
+                                <div class="form-group">
+                                    <input name="author" type="text" class="form-control" placeholder="Name">
+                                </div>
+                                <div class="form-group last">
+                                    <input name="email" type="text" class="form-control" placeholder="Email">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control" placeholder="Comment"></textarea>
+                            </div>
+                            <div class="form-submit">
+                                <button type="button" class="btn btn-dark">Post Comment</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+$('.open-post').on('click', function() {
+    var postUrl = $(this).attr("href");
+    $('.inline-menu-container').removeClass('showx');
+    $('.content-blocks.pop').addClass('showx');
+    $('.content-blocks.pop section').load(postUrl)
+    return false;
+});
+$('#close-post').on('click', function() {
+    $('.content-blocks.pop').removeClass('showx');
+    $('.inline-menu-container').addClass('showx');
+    $('.content-blocks.pop section').empty();
+});
+</script>
