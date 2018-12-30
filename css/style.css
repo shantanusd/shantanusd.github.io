@@ -2187,6 +2187,7 @@ h4.package {
         left: 1092px;
         top: 518px;
     }
+
     .contact-block {
         -ms-transform: rotate(-34deg);
         -webkit-transform: rotate(-34deg);
@@ -2237,6 +2238,7 @@ h4.package {
         left: 772px;
         top: 428px;
     }
+
     .contact-block {
         -ms-transform: rotate(-34deg);
         -webkit-transform: rotate(-34deg);
@@ -2289,6 +2291,7 @@ h4.package {
         width: 350px;
         height: 300px;
     }
+
     .contact-block {
         -ms-transform: rotate(-34deg);
         -webkit-transform: rotate(-34deg);
@@ -2329,6 +2332,7 @@ h4.package {
         left: 772px;
         top: 428px;
     }
+
     .contact-block {
         -ms-transform: rotate(-34deg);
         -webkit-transform: rotate(-34deg);
@@ -2401,6 +2405,7 @@ h4.package {
         left: 336px;
         top: 548px;
     }
+
     .contact-block {
         -ms-transform: rotate(-34deg);
         -webkit-transform: rotate(-34deg);
@@ -2446,6 +2451,7 @@ h4.package {
     .about-block,
     .portfolio-block,
     .blog-block,
+    
     .contact-block {
         position: relative;
         -ms-transform: rotate(0deg);
