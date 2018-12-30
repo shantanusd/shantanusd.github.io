@@ -1,6 +1,6 @@
 <?php
 
-$errorMSG = "Something went wrong!";
+$errorMSG = "Messange Failed";
 
 // NAME
 if (empty($_POST["name"])) {
@@ -51,10 +51,10 @@ $Body .= $message;
 $Body .= "\n";
 
 // send email
-$success = mail($EmailTo, $Subject, $Body, "From:".$email);
+$success = mail($EmailTo, $Subject, $Body);
 
 // redirect to success page
-if ($success && $errorMSG == ""){
+if ($success){
    echo "success";
 }else{
     if($errorMSG == ""){
@@ -65,3 +65,4 @@ if ($success && $errorMSG == ""){
 }
 
 ?>
+
