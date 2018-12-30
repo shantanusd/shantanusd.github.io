@@ -1,6 +1,6 @@
 <?php
 
-$errorMSG = "";
+$errorMSG = "Something went wrong!";
 
 // NAME
 if (empty($_POST["name"])) {
